@@ -1,0 +1,67 @@
+<metadata>
+    <attr path="/api/package[@name='com.afollestad.materialdialogs']" name="managedName">AFollestad.MaterialDialogs</attr>
+    <attr path="/api/package[@name='com.afollestad.materialdialogs.internal']" name="managedName">AFollestad.MaterialDialogs.Internal</attr>
+    <attr path="/api/package[@name='com.afollestad.materialdialogs.simplelist']" name="managedName">AFollestad.MaterialDialogs.SimpleList</attr>
+    <attr path="/api/package[@name='com.afollestad.materialdialogs.util']" name="managedName">AFollestad.MaterialDialogs.Util</attr>
+    <attr path="/api/package[@name='com.afollestad.materialdialogs.prefs']" name="managedName">AFollestad.MaterialDialogs.Prefs</attr>
+
+    <attr path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='DialogBase']" name="visibility">public</attr>
+    
+    <attr path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog.ListType']" name="managedName">ListTypeEnum</attr>
+
+    <attr path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog.Builder']/method[@name='customView' and parameter[1][@type='int']]/parameter[1]" name="managedName">layoutRes</attr>
+    <attr path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog.Builder']/method[@name='customView' and parameter[1][@type='android.view.View']]/parameter[1]" name="managedName">view</attr>
+    <attr path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog.Builder']/method[@name='customView']/parameter[2]" name="managedName">wrapInScrollView</attr>
+
+    <!-- Remove java finalize -->
+    <remove-node path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog.ButtonCallback']/method[@name='finalize' and count(parameter)=0]" />
+    
+    <!-- Hide protected backing property fields that conflict due to the binding generator PascalCase-ing them -->
+    <remove-node path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog']/field[@name='listView']" />
+    <remove-node path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog']/field[@name='titleFrame']" />
+    <remove-node path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog']/field[@name='view']" />
+    <remove-node path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog.Builder']/field[@name='adapter']" />
+    <remove-node path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog.Builder']/field[@name='alwaysCallInputCallback']" />
+    <remove-node path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog.Builder']/field[@name='alwaysCallMultiChoiceCallback']" />
+    <remove-node path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog.Builder']/field[@name='alwaysCallSingleChoiceCallback']" />
+    <remove-node path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog.Builder']/field[@name='autoDismiss']" />
+    <remove-node path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog.Builder']/field[@name='backgroundColor']" />
+    <remove-node path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog.Builder']/field[@name='btnSelectorStacked']" />
+    <remove-node path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog.Builder']/field[@name='btnStackedGravity']" />
+    <remove-node path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog.Builder']/field[@name='buttonsGravity']" />
+    <remove-node path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog.Builder']/field[@name='callback']" />
+    <remove-node path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog.Builder']/field[@name='cancelListener']" />
+    <remove-node path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog.Builder']/field[@name='cancelable']" />
+    <remove-node path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog.Builder']/field[@name='content']" />
+    <remove-node path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog.Builder']/field[@name='context']" />
+    <remove-node path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog.Builder']/field[@name='contentColor']" />
+    <remove-node path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog.Builder']/field[@name='contentGravity']" />
+    <remove-node path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog.Builder']/field[@name='customView']" />
+    <remove-node path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog.Builder']/field[@name='dismissListener']" />
+    <remove-node path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog.Builder']/field[@name='dividerColor']" />
+    <remove-node path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog.Builder']/field[@name='forceStacking']" />
+    <remove-node path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog.Builder']/field[@name='icon']" />
+    <remove-node path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog.Builder']/field[@name='inputMaxLength']" />
+    <remove-node path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog.Builder']/field[@name='inputType']" />
+    <remove-node path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog.Builder']/field[@name='itemColor']" />
+    <remove-node path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog.Builder']/field[@name='items']" />
+    <remove-node path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog.Builder']/field[@name='itemsGravity']" />
+    <remove-node path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog.Builder']/field[@name='keyListener']" />
+    <remove-node path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog.Builder']/field[@name='limitIconToDefaultSize']" />
+    <remove-node path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog.Builder']/field[@name='listSelector']" />
+    <remove-node path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog.Builder']/field[@name='maxIconSize']" />
+    <remove-node path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog.Builder']/field[@name='negativeColor']" />
+    <remove-node path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog.Builder']/field[@name='negativeText']" />
+    <remove-node path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog.Builder']/field[@name='neutralColor']" />
+    <remove-node path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog.Builder']/field[@name='neutralText']" />
+    <remove-node path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog.Builder']/field[@name='positiveColor']" />
+    <remove-node path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog.Builder']/field[@name='positiveText']" />
+    <remove-node path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog.Builder']/field[@name='progress']" />
+    <remove-node path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog.Builder']/field[@name='regularFont']" />
+    <remove-node path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog.Builder']/field[@name='showListener']" />
+    <remove-node path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog.Builder']/field[@name='theme']" />
+    <remove-node path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog.Builder']/field[@name='title']" />
+    <remove-node path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog.Builder']/field[@name='titleColor']" />
+    <remove-node path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog.Builder']/field[@name='titleGravity']" />
+    <remove-node path="/api/package[@name='com.afollestad.materialdialogs']/class[@name='MaterialDialog.Builder']/field[@name='widgetColor']" />
+</metadata>
