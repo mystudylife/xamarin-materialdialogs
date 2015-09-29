@@ -1,7 +1,7 @@
 ## Xamarin Material Dialogs ##
 Xamarin.Android Bindings for Aidan Follestad's [Material Dialogs](https://github.com/afollestad/material-dialogs "material-dialogs") library.
 
-![Screenshots](https://github.com/afollestad/material-dialogs/blob/master/art/screenshots.png)
+![Screenshots](https://raw.githubusercontent.com/afollestad/material-dialogs/master/art/mdshowcase.png)
 
 ### Build ###
 You will need to pull the submodule and add `maven { url "https://jitpack.io" }` to `repositories` in `library\build.gradle`.
