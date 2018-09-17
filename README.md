@@ -7,4 +7,4 @@ Xamarin.Android Bindings for Aidan Follestad's [Material Dialogs](https://github
 You will need to pull the submodule and add `maven { url "https://jitpack.io" }` to `repositories` in `library\build.gradle`.
 
 ### Installation ###
-You will need the the Roboto fonts (`Roboto-Regular.ttf` and `Roboto-Medium.ttf`) to the `Assets/fonts` folder (case sensitive) in your solution.
+You will need the Roboto fonts (`Roboto-Regular.ttf` and `Roboto-Medium.ttf`) to the `Assets/fonts` folder (case sensitive) in your solution.
